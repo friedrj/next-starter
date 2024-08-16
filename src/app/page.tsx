@@ -1,3 +1,7 @@
 export default function Home() {
-  return <main>app</main>;
+  return (
+    <main>
+      <h1 className="font-heading">app</h1>
+    </main>
+  );
 }
