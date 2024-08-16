@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Providers from "@/components/providers";
+import SiteHeader from "@/components/site-header";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -40,7 +41,8 @@ export default function RootLayout({
       >
         <Providers>
           <div className="relative flex min-h-dvh flex-col bg-background">
-            {children}
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
           </div>
         </Providers>
       </body>
